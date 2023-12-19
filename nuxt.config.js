@@ -12,7 +12,7 @@ export default {
     },
     //build github page
     router: {
-      base: "/<repository-name>/",
+      base: "/xtel-work/",
     },
     meta: [
       { charset: "utf-8" },
