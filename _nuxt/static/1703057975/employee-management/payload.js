@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/employee-management", {data:[{}],fetch:{},mutations:[]});
