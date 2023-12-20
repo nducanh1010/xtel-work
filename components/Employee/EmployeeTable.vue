@@ -29,7 +29,7 @@
           </v-icon>
         </template>
         <template #[`item.actions`]="{ item, index }">
-          <v-icon small class="mr-2" @click="editItem(item)">
+          <v-icon small @click="editItem(item)">
             mdi-pencil
           </v-icon>
           <v-icon

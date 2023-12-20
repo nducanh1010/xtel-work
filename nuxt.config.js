@@ -1,32 +1,33 @@
-import colors from "vuetify/es5/util/colors";
+import colors from 'vuetify/es5/util/colors'
 
 export default {
-  target: "static",
-  serverMiddleware: ["~/server-middleware/logger"],
+  target: 'static',
+  serverMiddleware: ['~/server-middleware/logger'],
+  router: {
+    base: '/xtel-work/'
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: "%s - project-name",
-    title: "project-name",
+    titleTemplate: '%s - project-name',
+    title: 'project-name',
     htmlAttrs: {
-      lang: "en",
+      lang: 'en'
     },
-    //build github page
-    router: {
-      base: "/xtel-work/",
-    },
+    // build github page
+
     meta: [
-      { charset: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "" },
-      { name: "format-detection", content: "telephone=no" },
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { hid: 'description', name: 'description', content: '' },
+      { name: 'format-detection', content: 'telephone=no' }
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ["~/assets/normalize.css"],
+  css: ['~/assets/normalize.css'],
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: ["~/plugins/validate.js", "~/plugins/preview.client.js"],
+  plugins: ['~/plugins/validate.js', '~/plugins/preview.client.js'],
   // router middleware
   // router: {
   //   middleware: 'user-auth'
@@ -39,33 +40,33 @@ export default {
     // https://go.nuxtjs.dev/eslint
     // '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/vuetify
-    "@nuxtjs/vuetify",
+    '@nuxtjs/vuetify'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
-    "@nuxtjs/axios",
+    '@nuxtjs/axios'
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
-    baseURL: "/",
+    baseURL: '/'
   },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
-    customVariables: ["~/assets/variables.scss"],
+    customVariables: ['~/assets/variables.scss'],
     theme: {
       dark: false,
       themes: {
         light: {
           primary: colors.blue.darken1,
-          secondary: "#b0bec5",
+          secondary: '#b0bec5',
           accent: colors.grey.darken3,
           error: colors.deepOrange.accent4,
-          lightgrey: colors.grey.lighten1,
+          lightgrey: colors.grey.lighten1
         },
         dark: {
           primary: colors.blue.darken2,
@@ -74,12 +75,12 @@ export default {
           info: colors.teal.lighten1,
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,
-          success: colors.green.accent3,
-        },
-      },
-    },
+          success: colors.green.accent3
+        }
+      }
+    }
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
-};
+  build: {}
+}
