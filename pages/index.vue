@@ -81,6 +81,16 @@
 
 <script>
 export default {
-  name: 'IndexPage'
+  name: 'IndexPage',
+  head: {
+    title: 'Homepage',
+    meta: [
+      {
+        hid: 'Homepage',
+        name: 'Homepage',
+        content: 'Homepage description'
+      }
+    ]
+  }
 }
 </script>

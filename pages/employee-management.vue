@@ -10,7 +10,17 @@
 </template>
 <script>
 export default {
-  name: 'EmployeeManagement'
+  name: 'EmployeeManagement',
+  head: {
+    title: 'Employee',
+    meta: [
+      {
+        hid: 'Employee',
+        name: 'Employee',
+        content: 'Employee description'
+      }
+    ]
+  }
 }
 </script>
 <style></style>
